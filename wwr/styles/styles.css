@@ -1,11 +1,18 @@
-#hero-img {
-    text-align: center;
-    width: 100%;
 
+#content {
+  max-width: 1600px;
+  margin: 0 auto;
+  
 }
 
 nav a {
   text-align: center;
+}
+
+#hero-img {
+  text-align: center;
+  width: 100%;
+
 }
 
 #hero-msg h1 {
@@ -28,6 +35,18 @@ main section {
   text-decoration: none;
 }
 
+#background {
+  height: 725pxpx;
+}
+
+
+body {
+  font-family: "Montserrat", "sans-serif", "Roboto";
+  color : #e0e7e9;
+  background-color: #00343d;
+  text-decoration: none;
+}
+
 header {
 
     background-color: #5e6a63; 
@@ -37,7 +56,7 @@ header {
   }
 
 #logo_link {
-  padding: 5px;
+  padding: 80px;
 }
 
 nav a {
@@ -52,7 +71,7 @@ nav a {
     text-decoration: none;
 } 
 
-.Join {
+.join {
     text-align: center;
     color: #fcfbfb;
     text-decoration: none;
@@ -61,6 +80,7 @@ nav a {
 .msg {
   background-color: #5e6a63;
   color: white
+
 }
 
 footer {
@@ -88,8 +108,9 @@ footer {
   }
   
     nav a:hover {
-    color: #5e6a63;
-    padding: 35px;
+    background-color: #080808;
+    padding: 5px;
+    text-decoration: none;
   }
   
     
