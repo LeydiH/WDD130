@@ -1,3 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
 #content {
   max-width: 1600px;
   margin: 0 auto;
@@ -9,6 +15,8 @@
 
 #background {
   height: 725px;
+  background-color: #5e6a63;
+ 
 }
 
 nav a {
@@ -25,11 +33,18 @@ nav a {
 #hero-msg h1 {
   text-align: center;
   text-decoration: none;
+  font-family: "Montserrat", "sans-serif", "Roboto";
+  font-size: 2em;
+  
 }  
 
 #hero-msg h4 {
   text-align: center;
   text-decoration: none;
+  font-family: "Open Sans", "Montserrat", "Roboto";
+  font-size: 1.5em;
+  
+
 }
 
 .button-box {
@@ -39,62 +54,158 @@ nav a {
 main section {
   text-align: center;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
+
 }
+
+.rivers-card {
+  margin: 200px 0;
+}
+
+.camping-card {
+  margin: 200px 0;
+}
+
+.rapids-card {
+  margin: 200px 0;
+}  
+
 
 body {
   font-family: "Montserrat", "sans-serif", "Roboto";
   color: #e0e7e9;
   background-color: #00343d;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 header {
   background-color: #5e6a63; 
   color: #0b0b0b;
   text-decoration: none;
+  font-size: 1.5em;
+  font-family: "Montserrat", "sans-serif", "Roboto";
+  padding: 0;
 }
 
 #logo_link {
-  padding: 80px;
+  padding-top: 5px;
+  justify-self: center;
+  align-self: center;
 }
 
 nav a {
   text-align: center;
   color: #fcfbfb;
   text-decoration: none;
+  font-size: 1.5em;
+  font-family: "Montserrat", "sans-serif", "Roboto";
+  padding: 35px;
 }  
+
+.home-title {
+  color: rgb(121, 70, 70);
+  margin-top: 10px;
+  font-size: 2em;
+}
 
 .book {
   text-align: center;
   color: #fcfbfb;
   text-decoration: none;
-} 
+  font-family: "Montserrat", "sans-serif", "Roboto";
+  font-size: 1.5em;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px #d9c2a3;
+}
+
+.button-box .book {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid black;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.button-box .book:hover {
+  background-color: yellow;
+  color: black;
+}
 
 .join {
-  text-align: center;
-  color: #fcfbfb;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid black;
+  color: black;
   text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.join:hover {
+  background-color: yellow;
+  color: black;
+}
+
+.mountains {
+  font-size: 2em;
+  padding: 15px 30px;
+  margin-top: 100px;
 } 
+
+.card-img {
+    border: 10px solid #d9c2a3;
+
+}
+  main section img {
+      box-sizing: border-box;   
+}
 
 .msg {
   background-color: #5e6a63;
-  color: white
+  line-height: 1.5em;
+  padding: 35px;
+  margin-top: 200px; 
+  
+}
+
+.msg p {
+  background-color: #5e6a63;
+  padding-bottom: 15px;
+  
 }
 
 footer {
-  color: rgb(255, 255, 255);
+  color: rgb(38, 26, 26);
+  text-decoration: none;
+  background-color: #5e6a63;
+  padding: 25px 50px;
+  margin-top: 200px;
+}
+
+footer :hover {
+  color: rgb(179, 120, 120);
   text-decoration: none;
   background-color: #5e6a63;
 }
 
 footer a {
-  color: rgb(255, 255, 255);
+  color: rgb(38, 26, 26);
   text-decoration: none;
   background-color: #5e6a63;
 }
 
 footer a:hover {
-  color: rgb(243, 231, 237);
+  color: rgb(179, 120, 120);
   text-decoration: none;
   background-color: #5e6a63;
 }
