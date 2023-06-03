@@ -44,8 +44,12 @@ nav a {
 }
 
 #hero-img {
-  text-align: center;
-  width: 100%;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  justify-self: center;
+  align-self: center;
+  z-index: -1;
+  width: 100%; 
 }
 
 #hero-msg h1 {
@@ -53,6 +57,8 @@ nav a {
   text-decoration: none;
   font-family: "Montserrat", "sans-serif", "Roboto";
   font-size: 2em;
+  margin: 0;
+  padding: 0;
   
 }  
 
@@ -61,12 +67,11 @@ nav a {
   text-decoration: none;
   font-family: "Open Sans", "Montserrat", "Roboto";
   font-size: 1.5em;
-}
-
-#hero-msg h4 {
   color: white;
-}
+  margin: 0;
+  padding: 0;
 
+} 
 .button-box {
   text-align: center;
 }
