@@ -15,7 +15,7 @@
 
 #background {
   height: 725px;
-  background-color: #5e6a63;
+  background-color: #f3d3e4;
  
 }
 
@@ -23,6 +23,24 @@ nav a {
   text-align: center;
   color: #fcfbfb;
   text-decoration: none;
+}
+
+#hero {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  margin-top: -100px; 
+}
+
+#hero-box {
+  grid-column: 1/4;
+  grid-row: 1/3;
+  z-index: -1;
+}
+
+#hero-msg {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-top: 100px;
 }
 
 #hero-img {
@@ -43,8 +61,10 @@ nav a {
   text-decoration: none;
   font-family: "Open Sans", "Montserrat", "Roboto";
   font-size: 1.5em;
-  
+}
 
+#hero-msg h4 {
+  color: white;
 }
 
 .button-box {
@@ -56,21 +76,7 @@ main section {
   text-decoration: none;
   margin: 0;
   padding: 0;
-
 }
-
-.rivers-card {
-  margin: 200px 0;
-}
-
-.camping-card {
-  margin: 200px 0;
-}
-
-.rapids-card {
-  margin: 200px 0;
-}  
-
 
 body {
   font-family: "Montserrat", "sans-serif", "Roboto";
@@ -82,7 +88,9 @@ body {
 }
 
 header {
-  background-color: #5e6a63; 
+  display: grid;
+  grid-template-columns: 150px auto;
+  background-color: #00343d;
   color: #0b0b0b;
   text-decoration: none;
   font-size: 1.5em;
@@ -96,6 +104,60 @@ header {
   align-self: center;
 }
 
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.card-img, .mountains {
+  width: 100%;
+}
+
+.rivers-card {
+  grid-column: 2/4;
+  grid-row: 2/3;
+
+}
+
+.camping-card {
+  grid-column: 5/7;
+  grid-row: 2/3;
+}
+
+.rapids-card {
+  grid-column: 8/10;
+  grid-row: 2/3;
+} 
+
+#background {
+  grid-column: 1/12;
+  grid-row: 4/10;
+}
+
+.mountains {
+  width: 100%;
+  grid-column: 2/7;
+  grid-row: 5/8;
+  box-shadow: 5px 5px 10px #6f7364;
+}
+
+.msg {
+  background-color: #5e6a63;
+  padding: 35px;
+  grid-column: 6/10;
+  grid-row: 6/7;
+  box-shadow: 5px 5px 10px #5e6a63;
+}
+
+
 nav a {
   text-align: center;
   color: #fcfbfb;
@@ -106,7 +168,7 @@ nav a {
 }  
 
 .home-title {
-  color: rgb(121, 70, 70);
+  color: rgb(228, 169, 193);
   margin-top: 10px;
   font-size: 2em;
 }
@@ -115,7 +177,7 @@ nav a {
   text-align: center;
   color: #fcfbfb;
   text-decoration: none;
-  font-family: "Montserrat", "sans-serif", "Roboto";
+  font-family: "Montserrat", "sans-serif", "Roboto",;
   font-size: 1.5em;
   padding: 15px 30px;
   margin-top: 50px;
@@ -156,27 +218,29 @@ nav a {
   color: black;
 }
 
-.mountains {
-  font-size: 2em;
-  padding: 15px 30px;
-  margin-top: 100px;
-} 
-
 .card-img {
     border: 10px solid #d9c2a3;
-
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
 }
+
+.card-img:hover {
+  opacity: .6;
+  transform: scale(1.1);
+}
+
+
   main section img {
       box-sizing: border-box;   
 }
 
 .msg {
-  background-color: #5e6a63;
   line-height: 1.5em;
   padding: 35px;
   margin-top: 200px; 
   
 }
+
 
 .msg p {
   background-color: #5e6a63;
@@ -190,6 +254,9 @@ footer {
   background-color: #5e6a63;
   padding: 25px 50px;
   margin-top: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 footer :hover {
@@ -218,5 +285,47 @@ nav a:hover {
   background-color: #080808;
   padding: 5px;
   text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
 }
 
