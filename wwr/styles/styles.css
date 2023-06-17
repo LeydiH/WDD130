@@ -245,10 +245,13 @@ nav a {
   transform: scale(1.1);
 }
 
-img {
+#hero-msg img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border: 4px solid black;
+  box-shadow: 0 0 15px rgb(179, 120, 120);
+  border-radius: 50px;
 }
 
 main section img {
@@ -270,7 +273,8 @@ footer {
   justify-content: space-around;
   align-items: center;
   font-size: 1.5em;
-  font-weight: bolder;
+  font-weight: bold;
+  font-family: "Open Sans", "Montserrat", "Roboto";
 }
 
 footer :hover {
@@ -283,6 +287,9 @@ footer a {
   color: rgb(38, 26, 26);
   text-decoration: none;
   background-color: #5e6a63;
+  font-size: 1.0em;
+  font-weight: bold;
+  font-family: "Open Sans", "Montserrat", "Roboto";
 }
 
 footer a:hover {
