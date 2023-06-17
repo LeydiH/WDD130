@@ -42,9 +42,10 @@ body {
 img {
   display: block;
   margin: auto;
-  max-width: 300px;
+  max-width: 100%;
   height: auto;
   margin-bottom: 20px;
+  align-items: center;
 
 }
 
