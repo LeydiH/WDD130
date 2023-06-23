@@ -245,6 +245,14 @@ nav a {
   transform: scale(1.1);
 }
 
+form ul li {
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+
 #hero-msg img {
   display: block;
   margin-left: auto;
@@ -262,6 +270,7 @@ main section img {
   background-color: #5e6a63;
   padding-bottom: 15px;
 }
+
 
 footer {
   color: rgb(38, 26, 26);
