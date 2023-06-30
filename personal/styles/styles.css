@@ -1,0 +1,224 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap');
+
+
+:root {
+    --primary-color: #482e6e;
+    --secondary-color: #b24fe8;
+    --accent1-color: #d1aa9d;
+    --accent2-color: #E2F8C1;
+  }* 
+
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'ZCOOL QingKe HuangYou', Arial, Helvetica, sans-serif;
+    
+    line-height: 1.6;
+    background-color: #ed9df5;
+  }
+  
+  header {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    padding:0px;
+    margin-bottom: 4px;
+  }
+
+  header h1 {
+    font-size: 60px;
+    font-weight: bolder;
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    align-items: center;
+    text-align: center;
+    font-family: 'Annie Use Your Telescope', Arial, Helvetica, sans-serif;
+    margin-top: -55px;   
+    height: 0%;
+  }
+  
+  header a {
+    grid-column: 2 / span 3;
+    grid-row: 2;
+    text-align: center;
+    color: var(--accent1-color);    
+    font-size: 2.0em;
+    text-decoration: none;
+    border: 2px solid rgba(36, 8, 67, 0.3);
+    background-color: #54435d;
+    margin: 3.5vw;
+    box-shadow: 0 0 25px #b24fe8;
+  }
+  
+  header nav a {
+    margin-left: 20px;
+  }
+
+  header .logo {
+    grid-column: 1;
+    grid-row: 2;
+    width: 150px;
+    height: 150px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 150px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+  }
+  
+  #Poetry {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 400px;
+  }
+  
+  #Poetry-p img {
+    grid-column: 1 / 2;
+    grid-row: 1;
+    width: 200%;
+    height: 50%;
+    padding: 1px;
+    object-fit: cover;
+  }
+
+  .title-mid {
+    text-align: center;
+    border-bottom: black;
+    background-color: #a36aa8;
+  }
+
+  div p {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 10px;
+  }
+
+  main .personal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    flex-direction: row;
+    font-size: 1.5em;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  main .poems img {
+    grid-column: 1;
+    grid-row: 1 span 2;
+    width: 100%;
+    height: 100%;
+    padding: 1px;
+    object-fit: cover;
+  }
+
+  main .poems {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    flex-direction: row;
+    font-size: 1.5em;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+    
+  }
+
+  main .poems h2 {
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 15px;
+    margin-bottom: 50px;
+  }
+
+  main .poems p {
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 100px;
+    margin-left: 5px;
+    }
+
+    main .poems img {
+      grid-column: 1;
+      grid-row: 1 /span 2;
+      width: 90%;
+      height: 90%;
+      padding: 1px;
+      margin: 10px;
+      object-fit: cover;
+      border-radius: 50px;
+    }
+  
+  main .other {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 5px 0;
+    text-align: center;
+    font-size: 1.5em;
+    height: 650px;
+  }
+
+  main .other img {
+    grid-column: 2;
+    grid-row: 1 /span 2;
+    width: 90%;
+    height: 60%;
+    margin-top: 40px;
+    object-fit: cover;
+    border-radius: 50px;
+  }
+
+  main .other h2 {
+        grid-column: 1;
+        grid-row: 1;
+        margin-top: 35px;
+        margin-bottom: 50px;
+    }
+
+    main .other p {
+        grid-column: 1;
+        grid-row: 1;
+        margin-top: 125px;
+        margin-left: 5px;
+    }
+  
+  footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    margin-bottom: 10px;
+    color: var(--accent1-color);
+    font-size: 20px;
+  }
+
+  footer a {
+    color: var(--accent1-color);
+    font-size: 20px;
+  }
+  
+  footer .social img {
+    width: 48px;
+    height: 48px;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
